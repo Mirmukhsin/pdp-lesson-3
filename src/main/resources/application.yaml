@@ -1,0 +1,11 @@
+demoAPI:
+  base: 'http://localhost:1208/v1/product'
+  post: '${demoAPI.base}/create'
+  put: '${demoAPI.base}/update'
+  delete: '${demoAPI.base}/delete/{id}'
+  get: '${demoAPI.base}/get/{id}'
+  getList: '${demoAPI.base}/list'
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: 'jdbc:h2:mem:~'
